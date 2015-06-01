@@ -1,2 +1,2 @@
 # tcpserv
-Simple python socket helper library to implement a stateless tcp-server.
+Simple python socket helper library to implement stateless tcp-servers.
