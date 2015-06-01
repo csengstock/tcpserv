@@ -4,7 +4,7 @@ Simple python socket helper library to implement stateless tcp-servers.
 ## Usage
 Put the `tcpserv.py` file in your app-folder or anywhere in your `PYTHONPATH`.
 
-### Set-up Server:
+### Set-up Server
 Define stateless server logic by a handler function
 ```
 def my_handler(request): return "".join(reversed(request))
@@ -22,7 +22,7 @@ except KeyboardInterrupt, e:
   pass
 ```
 
-## Make Requests
+### Make Requests
 ```
 from tcpserv import request
 for i in xrange(100):
