@@ -4,16 +4,18 @@ Simple python socket helper library to implement stateless tcp-servers.
 ## Usage
 Put the `tcpserv.py` file in your app-folder or anywhere in your `PYTHONPATH`.
 
-### Set-up Server
+### Set-up Server:
+Define stateless server logic by a handler function
 ```
-# Define stateless server logic by a handler function
 def my_handler(request): return "".join(reversed(request))
-
-# Start the server (serves forever)
+```
+Start the server (serves forever):
+```
 from tcpserv import listen
 listen("localhost", 55555, my_handler)
-
-# You can quit the call by catching signals, e.g., Ctrl-C:
+```
+You can quit the call by catching signals, e.g., Ctrl-C:
+```
 try:
   listen("localhost", 55555, my_handler
 except KeyboardInterrupt, e:
